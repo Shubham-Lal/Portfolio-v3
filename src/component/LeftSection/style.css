@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    padding: 25px 30px;
+    padding: 25px;
 }
 
 .image__container {
@@ -161,6 +161,7 @@
 
 .webLinks__container {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .webLinks__container p {
@@ -187,17 +188,34 @@
 }
 
 .webLinks__container .icon__conatiner .icon:hover {
-    background-color: #e8e8e8;
+    background-color: #f2f2f2;
 }
 
-.webLinks__container .icon__conatiner .icon:nth-child(1):hover svg {
+.webLinks__container .icon__conatiner .icon:nth-child(1) svg {
     fill: #0077b5;
     transition: 0.2s ease;
 }
 
-.webLinks__container .icon__conatiner .icon:nth-child(2):hover svg {
+.webLinks__container .icon__conatiner .icon:nth-child(2) svg {
     fill: #CD201F;
     transition: 0.2s ease;
+}
+
+.links__container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.links__container p {
+    color: #707070;
+    font-size: 11px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.link__conatiner {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 604px) and (max-width: 1200px) {
@@ -230,6 +248,7 @@
     .left__container {
         width: 360px;
         height: calc(100vh - 80px);
+        padding: 25px 30px;
         overflow-y: auto;
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(25, 25, 25, .1);

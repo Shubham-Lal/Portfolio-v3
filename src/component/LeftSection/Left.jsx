@@ -59,6 +59,12 @@ const Left = () => {
                     ))}
                 </div>
             </div>
+            <div className="links__container">
+                <p>LINKS</p>
+                <div className="link__conatiner">
+
+                </div>
+            </div>
         </div>
     )
 }
