@@ -1,0 +1,123 @@
+.left__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+
+.image__container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image__container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info__conatiner {
+    text-align: center;
+}
+
+.info__conatiner .name {
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22.5px;
+}
+
+.info__conatiner .profession {
+    font-size: 15px;
+    line-height: 1.3;
+    color: dimgray;
+}
+
+.info__conatiner .website {
+    font-size: 15px;
+    line-height: 1.3;
+    color: dimgray;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: 0.3s ease;
+}
+
+.info__conatiner .website:hover {
+    color: black;
+}
+
+.info__conatiner .location {
+    padding: 15px 0;
+    font-size: 15px;
+    color: dimgray;
+}
+
+.buttons__container {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons__container a:nth-child(1) {
+    width: 100%;
+    padding: 9px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0057ff;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+
+.buttons__container a:nth-child(1):hover {
+    background-color: #0044cc;
+}
+
+.buttons__container a:nth-child(2) {
+    width: 100%;
+    padding: 9px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f8ff;
+    color: #0057ff;
+    border: 1px solid #dee8ff;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+
+.buttons__container a:nth-child(2):hover {
+    background-color: #0055ff13;
+}
+
+@media screen and (min-width: 604px) and (max-width: 1200px) {
+    .left__container {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .buttons__container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons__container a:nth-child(1),
+    .buttons__container a:nth-child(2) {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .left__container {
+        width: 360px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(25, 25, 25, .1);
+    }
+}
