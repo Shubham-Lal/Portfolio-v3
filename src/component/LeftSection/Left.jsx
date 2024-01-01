@@ -26,7 +26,7 @@ const Left = () => {
                     Follow
                 </a>
                 <a
-                    href="https://api.whatsapp.com/send?phone=+918910503408&text=Hello Pratik, Let&amp;s connect"
+                    href="https://api.whatsapp.com/send?phone=+918910503408&text=Hello Pratik, how was your day?"
                     target="_blank" rel="noopener noreferrer"
                 >
                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" style={{ width: "18px", fill: "#0057ff", marginRight: "7px" }}><path d="M9,10.094l9-6.7615v-.75A.5735.5735,0,0,0,17.4375,2H.5625A.57351.57351,0,0,0,0,2.5835V3.318Z"></path><polygon points="12.389 8.981 18 13.184 18 6.667 18 4.771"></polygon><path d="M11.433,9.7,9.645,11.047a1.086,1.086,0,0,1-1.29,0L6.541,9.6875,0,14.534v.883A.573.573,0,0,0,.5625,16h16.875A.573.573,0,0,0,18,15.417v-.795Z"></path><polygon points="5.582 8.969 0 4.756 0 6.667 0 13.097"></polygon></svg>
@@ -37,7 +37,7 @@ const Left = () => {
                 <p className="hire__text">Hire Pratik</p>
                 <a
                     className="hire__button"
-                    href="https://api.whatsapp.com/send?phone=+918910503408&text=Hello Pratik, Let&amp;s connect"
+                    href="https://api.whatsapp.com/send?phone=+918910503408&text=Hello Pratik, how was your day?"
                     target="_blank" rel="noopener noreferrer"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g transform="translate(0.625 0.625)"><g transform="translate(0 0)"><path d="M14.375,8.759A5.625,5.625,0,1,1,8.75,14.384,5.631,5.631,0,0,1,14.375,8.759Zm0,10A4.375,4.375,0,1,0,10,14.384,4.38,4.38,0,0,0,14.375,18.759Z" transform="translate(-0.625 -0.634)"></path><path d="M16.585,15.009h-2.21a.625.625,0,0,1-.625-.625v-2.21a.625.625,0,0,1,1.25,0v1.585h1.585a.625.625,0,0,1,0,1.25Z" transform="translate(-0.625 -0.634)"></path><path d="M8.75,9.384H4.375a.625.625,0,0,1,0-1.25H8.75a.625.625,0,0,1,0,1.25Z" transform="translate(-0.625 -0.634)"></path><path d="M6.875,12.509h-2.5a.625.625,0,0,1,0-1.25h2.5a.625.625,0,0,1,0,1.25Z" transform="translate(-0.625 -0.634)"></path><path d="M6.875,15.634h-2.5a.625.625,0,0,1,0-1.25h2.5a.625.625,0,0,1,0,1.25Z" transform="translate(-0.625 -0.634)"></path><path d="M8.125,20.009H1.875A1.875,1.875,0,0,1,0,18.134V5.009A1.877,1.877,0,0,1,1.875,3.134H4.427a3.751,3.751,0,0,1,7.4,0h2.552A1.877,1.877,0,0,1,16.25,5.009V6.884a.625.625,0,1,1-1.25,0V5.009a.626.626,0,0,0-.625-.625H11.25a.625.625,0,0,1-.625-.625,2.5,2.5,0,0,0-5,0A.625.625,0,0,1,5,4.384H1.875a.626.626,0,0,0-.625.625V18.134a.625.625,0,0,0,.625.625h6.25a.625.625,0,0,1,0,1.25Z" transform="translate(-0.625 -0.634)"></path><path d="M8.125,4.384a.937.937,0,1,1,.938-.937A.939.939,0,0,1,8.125,4.384Z" transform="translate(-0.625 -0.634)"></path></g></g></svg>
@@ -76,7 +76,7 @@ const Left = () => {
                             key={i}
                         >
                             <p>{item.name}</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.125 15.194" aria-labelledby="IconBase-title-5e94d183-b161-4668-be42-569a5fcf3c5c IconBase-description-5e94d183-b161-4668-be42-569a5fcf3c5c" role="graphics-symbol img" width="100%" height="100%" fill="none"><title id="IconBase-title-5e94d183-b161-4668-be42-569a5fcf3c5c">LinkOut</title><desc id="IconBase-description-5e94d183-b161-4668-be42-569a5fcf3c5c">opens in a new tab or window</desc><g><path d="M12.657 3.475H7.501A1.875 1.875 0 005.626 5.35v2.344 M9.844 6.288l2.813-2.812L9.844.663 M10.782 9.1v4.688a.938.938 0 01-.937.938H1.407a.938.938 0 01-.937-.937v-7.5a.938.938 0 01.938-.937h1.405"></path></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.125 15.194" aria-labelledby="IconBase-title-5e94d183-b161-4668-be42-569a5fcf3c5c IconBase-description-5e94d183-b161-4668-be42-569a5fcf3c5c" role="graphics-symbol img" width="100%" height="100%" fill="none"><desc id="IconBase-description-5e94d183-b161-4668-be42-569a5fcf3c5c">opens in a new tab or window</desc><g><path d="M12.657 3.475H7.501A1.875 1.875 0 005.626 5.35v2.344 M9.844 6.288l2.813-2.812L9.844.663 M10.782 9.1v4.688a.938.938 0 01-.937.938H1.407a.938.938 0 01-.937-.937v-7.5a.938.938 0 01.938-.937h1.405"></path></g></svg>
                         </a>
                     ))}
                 </div>

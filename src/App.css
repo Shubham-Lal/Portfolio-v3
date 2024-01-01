@@ -23,7 +23,6 @@ a {
 
 .container {
   display: flex;
-  gap: 40px;
   justify-content: space-between;
   padding: 40px;
 }

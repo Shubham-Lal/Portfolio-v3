@@ -9,14 +9,14 @@ export const links = [
     },
     {
         name: "Pexels",
-        link: ""
+        link: "https://www.pexels.com/@pratik-prasad-3736245"
     },
     {
         name: "Unsplash",
-        link: ""
+        link: "https://unsplash.com/@pratik19"
     },
     {
         name: "Dribbble",
-        link: ""
+        link: "https://dribbble.com/prasadpratik31082001"
     },
 ]

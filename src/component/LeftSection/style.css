@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    padding: 25px;
+    padding: 30px 25px;
 }
 
 .image__container {
@@ -27,6 +27,7 @@
     padding: 10px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 22.5px;
+    font-weight: bolder;
 }
 
 .info__conatiner .profession {
@@ -96,7 +97,7 @@
 .hire__container {
     width: 100%;
     margin-bottom: 30px;
-    padding: 10px 20px 5px;
+    padding: 10px 20px 0;
     border: 1px solid #dee8ff;
     border-radius: 5px;
     color: #191919;
@@ -278,6 +279,14 @@
     word-wrap: break-word;
 }
 
+.about__container p:last-child a {
+    line-height: 22px;
+}
+
+.about__container p:last-child a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 604px) and (max-width: 1200px) {
     .left__container {
         width: 100%;
@@ -310,7 +319,7 @@
     .left__container {
         width: 360px;
         height: calc(100vh - 80px);
-        padding: 25px 30px;
+        padding: 30px;
         overflow-y: auto;
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(25, 25, 25, .1);
