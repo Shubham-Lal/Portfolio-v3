@@ -24,7 +24,7 @@ const Left = () => {
                     Follow
                 </a>
                 <a
-                    href='https://api.whatsapp.com/send?phone=8910503408&text=Namaste Pratik'
+                    href='https://api.whatsapp.com/send?phone=+918910503408&text=Namaste Pratik'
                     target="_blank" rel="noopener noreferrer"
                 >
                     <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" style={{ width: "18px", fill: "#0057ff", marginRight: "7px" }}><path d="M9,10.094l9-6.7615v-.75A.5735.5735,0,0,0,17.4375,2H.5625A.57351.57351,0,0,0,0,2.5835V3.318Z"></path><polygon points="12.389 8.981 18 13.184 18 6.667 18 4.771"></polygon><path d="M11.433,9.7,9.645,11.047a1.086,1.086,0,0,1-1.29,0L6.541,9.6875,0,14.534v.883A.573.573,0,0,0,.5625,16h16.875A.573.573,0,0,0,18,15.417v-.795Z"></path><polygon points="5.582 8.969 0 4.756 0 6.667 0 13.097"></polygon></svg>
