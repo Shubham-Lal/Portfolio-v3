@@ -5,6 +5,7 @@ import { Context } from '../../Provider'
 import { webLinks } from '../../data/webLinks';
 import { links } from '../../data/links';
 import { photo } from '../../data/photo';
+import { graphic } from '../../data/graphic';
 
 const Right = () => {
     const windowWidth = useWindowWidth();
@@ -108,9 +109,9 @@ const Info = () => {
 
 const Photography = () => {
     return (
-        <div className="photo__container">
+        <div className="right__image__container">
             {photo.map((item, i) => (
-                <div key={item.id} className="photo__card">
+                <div key={item.id} className="right__image__card">
                     {item?.image ? (
                         <img src={item.image} alt="" key={item.id} />
                     ) : item?.video && (
@@ -124,8 +125,14 @@ const Photography = () => {
 
 const GraphicDesign = () => {
     return (
-        <div>
-            This is Graphic Design section.
+        <div className="right__image__container">
+            {graphic.map((item, i) => (
+                <div key={item.id} className="right__image__card">
+                    {item.image && (
+                        <img src={item.image} alt="" key={item.id} />
+                    )}
+                </div>
+            ))}
         </div>
     )
 }
