@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    padding: 30px 25px;
+    padding: 30px 25px 0;
 }
 
 .image__container {
@@ -160,6 +160,10 @@
     opacity: 1;
 }
 
+.info__container {
+    display: none;
+}
+
 .webLinks__container {
     width: 100%;
     margin-bottom: 20px;
@@ -311,7 +315,8 @@
     .webLinks__container,
     .links__container,
     .about__container {
-        display: none;
+        max-width: 610px;
+        margin: 0 auto 20px;
     }
 }
 
@@ -323,5 +328,9 @@
         overflow-y: auto;
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(25, 25, 25, .1);
+    }
+
+    .info__container {
+        display: block;
     }
 }
