@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 export const webLinks = [
     {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/pratik-prasad-39263a26a/",
+        link: "https://www.linkedin.com/in/pratik-prasad",
         icon: <FaLinkedinIn />
     },
     {
