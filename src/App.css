@@ -33,3 +33,27 @@ a {
     padding: 0;
   }
 }
+
+@media (min-width: 1201px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1488px) {
+  .container {
+    max-width: 1338px;
+  }
+}
+
+@media (min-width: 1489px) and (max-width: 1912px) {
+  .container {
+    max-width: 1762px;
+  }
+}
+
+@media (min-width: 1913px) {
+  .container {
+    max-width: 2186px;
+  }
+}

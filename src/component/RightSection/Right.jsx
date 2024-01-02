@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { Context } from '../../Provider'
 import { webLinks } from '../../data/webLinks';
 import { links } from '../../data/links';
+import { photo } from '../../data/photo';
 
 const Right = () => {
     const windowWidth = useWindowWidth();
@@ -107,8 +108,16 @@ const Info = () => {
 
 const Photography = () => {
     return (
-        <div>
-            This is Photography section.
+        <div className="photo__container">
+            {photo.map((item, i) => (
+                <div key={item.id} className="photo__card">
+                    {item?.image ? (
+                        <img src={item.image} alt="" key={item.id} />
+                    ) : item?.video && (
+                        <video src={item.video}></video>
+                    )}
+                </div>
+            ))}
         </div>
     )
 }
