@@ -43,7 +43,7 @@ const Right = () => {
 
 const Info = () => {
     return (
-        <>
+        <div className="information__container">
             <div className="webLinks__container">
                 <p>ON THE WEB</p>
                 <div className="icon__conatiner">
@@ -103,22 +103,24 @@ const Info = () => {
                     </a>
                 </p>
             </div>
-        </>
+        </div>
     )
 }
 
 const Photography = () => {
     return (
         <div className="right__image__container">
-            {photo.map((item, i) => (
-                <div key={item.id} className="right__image__card">
-                    {item?.image ? (
-                        <img src={item.image} alt="" key={item.id} />
-                    ) : item?.video && (
-                        <video src={item.video}></video>
-                    )}
-                </div>
-            ))}
+            <div className="right__image__wrapper">
+                {photo.map((item, i) => (
+                    <div key={item.id} className="right__image__card">
+                        {item?.image ? (
+                            <img src={item.image} alt="" key={item.id} />
+                        ) : item?.video && (
+                            <video src={item.video}></video>
+                        )}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
@@ -126,13 +128,15 @@ const Photography = () => {
 const GraphicDesign = () => {
     return (
         <div className="right__image__container">
-            {graphic.map((item, i) => (
-                <div key={item.id} className="right__image__card">
-                    {item.image && (
-                        <img src={item.image} alt="" key={item.id} />
-                    )}
-                </div>
-            ))}
+            <div className="right__image__wrapper">
+                {graphic.map((item, i) => (
+                    <div key={item.id} className="right__image__card">
+                        {item.image && (
+                            <img src={item.image} alt="" key={item.id} />
+                        )}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

@@ -1,11 +1,16 @@
 .right__container {
+    position: relative;
     flex: 1;
-    padding: 0 20px 25px;
 }
 
 .all__left__buttons {
-    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -30,89 +35,46 @@
     color: #fff;
 }
 
+.information__container {
+    padding: 10px 20px 25px;
+}
+
 .right__image__container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+}
+
+.right__image__wrapper {
+    columns: 4 20rem;
     gap: 10px;
 }
 
 .right__image__card {
-    max-width: 404px;
-    min-width: 145px;
-}
-
-.right__image__card img {
     width: 100%;
-    height: 100%;
-    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: zoom-in;
 }
 
+.right__image__card img,
 .right__image__card video {
     width: 100%;
-    height: 100%;
-    border-radius: 4px;
-}
-
-@media (min-width: 604px) {
-    .right__image__container {
-        display: inline-grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
-
-    .right__image__card img,
-    .right__image__card video {
-        object-fit: cover;
-    }
-}
-
-@media (min-width: 604px) and (max-width: 1038px) {
-    .right__container {
-        max-width: 888px;
-        margin: 0 auto;
-    }
-
-    .right__image__container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1039px) and (max-width: 1200px) {
-    .right__image__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1201px) and (max-width: 1488px) {
-    .right__image__container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1489px) and (max-width: 1912px) {
-    .right__image__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1913px) {
-    .right__image__container {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 @media screen and (min-width: 1201px) {
     .right__container {
         height: calc(100vh - 80px);
         margin-left: 30px;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
         overflow-y: auto;
     }
 
     .all__left__buttons {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
         justify-content: flex-start;
+    }
+
+    .information__container {
+        display: none;
     }
 }
