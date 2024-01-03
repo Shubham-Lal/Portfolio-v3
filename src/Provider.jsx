@@ -6,7 +6,10 @@ export const Context = createContext();
 const Provider = ({ children }) => {
     const windowWidth = useWindowWidth();
 
-    const [tab, setTab] = useState(0);
+    const [tab, setTab] = useState(parseInt(localStorage.getItem("tab")) || 0);
+    const [showImage, setShowImage] = useState(false);
+    const [imageSrc, setImageSrc] = useState("");
+    const [videoSrc, setVideoSrc] = useState("");
 
     useEffect(() => {
         if (windowWidth > 1200) {
@@ -16,8 +19,18 @@ const Provider = ({ children }) => {
         }
     }, [windowWidth, tab]);
 
+    useEffect(() => {
+        if (showImage) document.body.style.overflow = "hidden";
+        else document.body.style.overflow = "";
+    }, [showImage]);
+
     return (
-        <Context.Provider value={{ tab, setTab }}>
+        <Context.Provider value={{
+            tab, setTab,
+            showImage, setShowImage,
+            imageSrc, setImageSrc,
+            videoSrc, setVideoSrc
+        }}>
             {children}
         </Context.Provider>
     );

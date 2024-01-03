@@ -1,11 +1,11 @@
 import './style.css'
-import useWindowWidth from '../../hooks/useWindowWidth';
+import useWindowWidth from '../../hooks/useWindowWidth'
 import { useContext } from 'react'
 import { Context } from '../../Provider'
-import { webLinks } from '../../data/webLinks';
-import { links } from '../../data/links';
-import { photo } from '../../data/photo';
-import { graphic } from '../../data/graphic';
+import { webLinks } from '../../data/webLinks'
+import { links } from '../../data/links'
+import { photo } from '../../data/photo'
+import { graphic } from '../../data/graphic'
 
 const Right = () => {
     const windowWidth = useWindowWidth();
@@ -17,20 +17,29 @@ const Right = () => {
                 {!(windowWidth > 1200) && (
                     <button
                         className={`${tab === 0 && "active"}`}
-                        onClick={() => setTab(0)}
+                        onClick={() => {
+                            localStorage.setItem("tab", 0);
+                            setTab(0);
+                        }}
                     >
                         Info
                     </button>
                 )}
                 <button
                     className={`${tab === 1 && "active"}`}
-                    onClick={() => setTab(1)}
+                    onClick={() => {
+                        localStorage.setItem("tab", 1);
+                        setTab(1);
+                    }}
                 >
                     Photography
                 </button>
                 <button
                     className={`${tab === 2 && "active"}`}
-                    onClick={() => setTab(2)}
+                    onClick={() => {
+                        localStorage.setItem("tab", 2);
+                        setTab(2);
+                    }}
                 >
                     Graphic Design
                 </button>
@@ -108,13 +117,23 @@ const Info = () => {
 }
 
 const Photography = () => {
+    const { setShowImage, setImageSrc, setVideoSrc } = useContext(Context);
+
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
                 {photo.map((item, i) => (
-                    <div key={item.id} className="right__image__card">
+                    <div
+                        key={item.id}
+                        className="right__image__card"
+                        onClick={() => {
+                            if (item.image) setImageSrc(`${item.image}&lazy=load`);
+                            else if (item.video) setVideoSrc(item.video);
+                            setShowImage(true);
+                        }}
+                    >
                         {item?.image ? (
-                            <img src={item.image} alt="" key={item.id} />
+                            <img src={`${item.image}&w=600&lazy=load`} alt="" key={item.id} />
                         ) : item?.video && (
                             <video src={item.video}></video>
                         )}
@@ -127,11 +146,20 @@ const Photography = () => {
 }
 
 const GraphicDesign = () => {
+    const { setShowImage, setImageSrc } = useContext(Context);
+
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
                 {graphic.map((item, i) => (
-                    <div key={item.id} className="right__image__card">
+                    <div
+                        key={item.id}
+                        className="right__image__card"
+                        onClick={() => {
+                            setImageSrc(item.image);
+                            setShowImage(true);
+                        }}
+                    >
                         {item.image && (
                             <img src={item.image} alt="" key={item.id} />
                         )}
