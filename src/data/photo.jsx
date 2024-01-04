@@ -6,11 +6,11 @@ export const photo = [
         used: [
             {
                 name: "Photoshop",
-                short: "Ph"
+                short: "Ps"
             },
             {
                 name: "Lightroom",
-                short: "Li"
+                short: "Lr"
             },
         ],
         date: "December 19th, 2023"
@@ -621,7 +621,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "December 24th, 2021"
     },
     {
         id: 48,
@@ -637,7 +637,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "January 7th, 2022"
     },
     {
         id: 47,
@@ -653,7 +653,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 7th, 2021"
     },
     {
         id: 46,
@@ -669,7 +669,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 20th, 2021"
     },
     {
         id: 45,
@@ -685,7 +685,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 14th, 2021"
     },
     {
         id: 44,
@@ -701,7 +701,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 2nd, 2021"
     },
     {
         id: 43,
@@ -717,7 +717,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 7th, 2021"
     },
     {
         id: 42,
@@ -733,7 +733,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 7th, 2021"
     },
     {
         id: 41,
@@ -749,7 +749,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 27th, 2021"
     },
     {
         id: 40,
@@ -765,7 +765,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 27th, 2021"
     },
     {
         id: 39,
@@ -781,7 +781,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "July 2nd, 2021"
     },
     {
         id: 38,
@@ -797,7 +797,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 15th, 2021"
     },
     {
         id: 37,
@@ -813,7 +813,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 15th, 2021"
     },
     {
         id: 36,
@@ -829,7 +829,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 19th, 2021"
     },
     {
         id: 35,
@@ -845,7 +845,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 2nd, 2021"
     },
     {
         id: 34,
@@ -861,7 +861,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 2nd, 2021"
     },
     {
         id: 33,
@@ -877,7 +877,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "June 6th, 2021"
     },
     {
         id: 32,
@@ -893,7 +893,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 23rd, 2021"
     },
     {
         id: 31,
@@ -909,7 +909,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 24th, 2021"
     },
     {
         id: 30,
@@ -925,7 +925,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 9th, 2021"
     },
     {
         id: 29,
@@ -941,7 +941,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 13th, 2021"
     },
     {
         id: 28,
@@ -957,7 +957,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 20th, 2021"
     },
     {
         id: 27,
@@ -973,7 +973,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "April 29th, 2021"
     },
     {
         id: 26,
@@ -989,7 +989,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 9th, 2021"
     },
     {
         id: 25,
@@ -1005,7 +1005,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 11th, 2021"
     },
     {
         id: 24,
@@ -1021,7 +1021,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "April 20th, 2021"
     },
     {
         id: 23,
@@ -1037,7 +1037,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "April 24th, 2021"
     },
     {
         id: 22,
@@ -1053,7 +1053,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "May 5th, 2021"
     },
     {
         id: 21,
@@ -1069,7 +1069,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "December 16th, 2020"
     },
     {
         id: 20,
@@ -1085,7 +1085,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "March 12th, 2021"
     },
     {
         id: 19,
@@ -1101,7 +1101,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "April 29th, 2021"
     },
     {
         id: 18,
@@ -1117,7 +1117,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "November 29th, 2020"
     },
     {
         id: 17,
@@ -1133,7 +1133,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "December 8th, 2020"
     },
     {
         id: 16,
@@ -1149,7 +1149,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "March 17th, 2021"
     },
     {
         id: 15,
@@ -1165,7 +1165,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 27th, 2020"
     },
     {
         id: 14,
@@ -1181,7 +1181,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "November 18th, 2020"
     },
     {
         id: 13,
@@ -1197,7 +1197,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "December 8th, 2020"
     },
     {
         id: 12,
@@ -1213,7 +1213,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 17th, 2020"
     },
     {
         id: 11,
@@ -1229,7 +1229,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 27th, 2020"
     },
     {
         id: 10,
@@ -1245,7 +1245,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 29th, 2020"
     },
     {
         id: 9,
@@ -1261,7 +1261,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 14th, 2020"
     },
     {
         id: 8,
@@ -1277,7 +1277,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 14th, 2020"
     },
     {
         id: 7,
@@ -1293,7 +1293,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 17th, 2020"
     },
     {
         id: 6,
@@ -1309,7 +1309,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 12th, 2020"
     },
     {
         id: 5,
@@ -1325,7 +1325,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 13th, 2020"
     },
     {
         id: 4,
@@ -1341,7 +1341,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 14th, 2020"
     },
     {
         id: 3,
@@ -1357,7 +1357,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 11th, 2020"
     },
     {
         id: 2,
@@ -1373,7 +1373,7 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 13th, 2020"
     },
     {
         id: 1,
@@ -1389,6 +1389,6 @@ export const photo = [
                 short: "Li"
             },
         ],
-        date: ""
+        date: "October 10th, 2020"
     }
 ]

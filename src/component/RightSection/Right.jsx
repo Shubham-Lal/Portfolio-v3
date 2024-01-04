@@ -135,9 +135,9 @@ const Photography = () => {
                         {item?.image ? (
                             <img src={`${item.image}&w=600&lazy=load`} alt="" key={item.id} />
                         ) : item?.video && (
-                            <video src={item.video}></video>
+                            <video src={item.video} autoPlay loop muted></video>
                         )}
-                        <div className="card__info">
+                        <div className="card__info photo">
                             <div className="info__top">
                                 <div>{item.date}</div>
                                 <div>
@@ -173,7 +173,7 @@ const GraphicDesign = () => {
                         {item.image && (
                             <img src={item.image} alt="" key={item.id} />
                         )}
-                        <div className="card__info">
+                        <div className="card__info graphic">
                             <div className="info__top">
                                 <div>{item.date}</div>
                                 <div>
@@ -181,7 +181,7 @@ const GraphicDesign = () => {
                                 </div>
                             </div>
                             <div className="info__bottom">
-                                Name section ({item.name})
+                                {item.name}
                             </div>
                         </div>
                     </div>

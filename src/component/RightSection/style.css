@@ -71,10 +71,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -100px 36px -28px inset, rgba(0, 0, 0, 0.35) 0px 100px 36px -28px inset;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.card__info.photo {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px -100px 36px -28px inset, rgba(0, 0, 0, 0.4) 0px 100px 36px -28px inset;
+}
+
+.card__info.graphic {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -70px 36px -28px inset, rgba(0, 0, 0, 0.3) 0px 70px 36px -28px inset;
 }
 
 .right__image__card:hover .card__info {
