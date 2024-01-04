@@ -137,7 +137,17 @@ const Photography = () => {
                         ) : item?.video && (
                             <video src={item.video}></video>
                         )}
-                        <div className="card__info" />
+                        <div className="card__info">
+                            <div className="info__top">
+                                <div>{item.date}</div>
+                                <div>
+                                    {/* Used section */}
+                                </div>
+                            </div>
+                            <div className="info__bottom">
+                                Name section ({item.name})
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -163,7 +173,17 @@ const GraphicDesign = () => {
                         {item.image && (
                             <img src={item.image} alt="" key={item.id} />
                         )}
-                        <div className="card__info" />
+                        <div className="card__info">
+                            <div className="info__top">
+                                <div>{item.date}</div>
+                                <div>
+                                    {/* Used section */}
+                                </div>
+                            </div>
+                            <div className="info__bottom">
+                                Name section ({item.name})
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -8,7 +8,8 @@ export const graphic = [
                 name: "Figma",
                 short: "Fi"
             },
-        ]
+        ],
+        date: "December 27th, 2023"
     },
     {
         id: 3,
@@ -19,7 +20,8 @@ export const graphic = [
                 name: "Figma",
                 short: "Fi"
             },
-        ]
+        ],
+        date: "December 12th, 2023"
     },
     {
         id: 2,
@@ -30,7 +32,8 @@ export const graphic = [
                 name: "Figma",
                 short: "Fi"
             },
-        ]
+        ],
+        date: "December 12th, 2023"
     },
     {
         id: 1,
@@ -41,6 +44,7 @@ export const graphic = [
                 name: "Figma",
                 short: "Fi"
             },
-        ]
+        ],
+        date: "December 12th, 2023"
     }
 ]

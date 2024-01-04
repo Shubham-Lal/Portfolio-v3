@@ -68,7 +68,10 @@
     left: 0;
     right: 0;
     bottom: 6px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -75px 36px -28px inset, rgba(0, 0, 0, 0.35) 0px 75px 36px -28px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -100px 36px -28px inset, rgba(0, 0, 0, 0.35) 0px 100px 36px -28px inset;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -78,6 +81,23 @@
     z-index: 1;
     opacity: 1;
     visibility: visible;
+}
+
+.card__info .info__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.card__info .info__bottom {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffffff;
+    text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 1201px) {
