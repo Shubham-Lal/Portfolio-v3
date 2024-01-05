@@ -6,6 +6,7 @@ import { webLinks } from '../../data/webLinks'
 import { links } from '../../data/links'
 import { photo } from '../../data/photo'
 import { graphic } from '../../data/graphic'
+import useRearrangedImg from '../../hooks/useRearrangedImg'
 
 const Right = () => {
     const windowWidth = useWindowWidth();
@@ -118,11 +119,12 @@ const Info = () => {
 
 const Photography = () => {
     const { setShowImage, setImageSrc, setVideoSrc } = useContext(Context);
+    const rearrangedImages = useRearrangedImg(photo);
 
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
-                {photo.map((item, i) => (
+                {rearrangedImages.map((item, i) => item && (
                     <div
                         key={item.id}
                         className="right__image__card"
@@ -141,7 +143,6 @@ const Photography = () => {
                             <div className="info__top">
                                 <div>{item.date}</div>
                                 <div>
-                                    {/* Used section */}
                                 </div>
                             </div>
                             <div className="info__bottom">
@@ -157,11 +158,12 @@ const Photography = () => {
 
 const GraphicDesign = () => {
     const { setShowImage, setImageSrc } = useContext(Context);
+    const rearrangedImages = useRearrangedImg(graphic);
 
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
-                {graphic.map((item, i) => (
+                {rearrangedImages.map((item, i) => item && (
                     <div
                         key={item.id}
                         className="right__image__card"
