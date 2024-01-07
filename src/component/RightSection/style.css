@@ -50,35 +50,6 @@
     gap: 10px;
 }
 
-/* .right__image__wrapper {
-    columns: 1 20rem;
-    gap: 10px;
-}
-
-@media (min-width: 670px) {
-    .right__image__wrapper {
-        columns: 2 20rem;
-    }
-}
-
-@media (min-width: 1000px) {
-    .right__image__wrapper {
-        columns: 3 20rem;
-    }
-}
-
-@media (min-width: 1201px) {
-    .right__image__wrapper {
-        columns: 2 20rem;
-    }
-}
-
-@media (min-width: 1489px) {
-    .right__image__wrapper {
-        columns: 3 20rem;
-    }
-} */
-
 .right__image__card {
     position: relative;
     width: 100%;
