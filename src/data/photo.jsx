@@ -1,5 +1,21 @@
 export const photo = [
     {
+        id: 88,
+        name: "Coming Soon",
+        image: "https://images.pexels.com/photos/19892771/pexels-photo-19892771/free-photo-of-person-in-black-holding-lantern.jpeg?auto=compress&cs=tinysrgb",
+        used: [
+            {
+                name: "Photoshop",
+                short: "Ps"
+            },
+            {
+                name: "Lightroom",
+                short: "Lr"
+            },
+        ],
+        date: "January 17th, 2024"
+    },
+    {
         id: 87,
         name: "Coming Soon",
         image: "https://images.pexels.com/photos/19558476/pexels-photo-19558476/free-photo-of-nature-photography-editing-beautiful-flowers.jpeg?auto=compress&cs=tinysrgb",

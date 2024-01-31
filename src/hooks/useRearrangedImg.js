@@ -1,21 +1,12 @@
 const useRearrangedImg = (images) => {
     function getNumberOfColumns() {
         const screenWidth = window.innerWidth;
-        if (screenWidth <= 669) {
-            return 1;
-        }
-        else if (screenWidth >= 670 && screenWidth <= 999) {
-            return 2;
-        }
-        else if (screenWidth >= 1000 && screenWidth <= 1200) {
-            return 3;
-        }
-        else if (screenWidth >= 1201 && screenWidth <= 1488) {
-            return 2;
-        }
-        else {
-            return 3;
-        }
+        
+        if (screenWidth <= 669) return 1;
+        else if (screenWidth >= 670 && screenWidth <= 999) return 2;
+        else if (screenWidth >= 1000 && screenWidth <= 1200) return 3;
+        else if (screenWidth >= 1201 && screenWidth <= 1488) return 2;
+        else return 3;
     }
 
     let numColumns = getNumberOfColumns();

@@ -31,13 +31,13 @@
 }
 
 .info__conatiner .profession {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.3;
     color: dimgray;
 }
 
 .info__conatiner .website {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.3;
     color: dimgray;
     text-decoration: underline;
@@ -140,7 +140,7 @@
 .hire__button__text p:last-child {
     color: #707070;
     display: block;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .hire__button svg:last-child {
@@ -171,7 +171,7 @@
 
 .webLinks__container p {
     color: #707070;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 30px;
     font-weight: bolder;
 }
@@ -213,7 +213,7 @@
 
 .links__container p {
     color: #707070;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 30px;
     font-weight: bolder;
 }
@@ -236,7 +236,7 @@
 
 .link__conatiner .link p {
     color: dimgray;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.3;
     word-break: break-all;
     transition: color .2s;
@@ -270,7 +270,7 @@
 
 .about__container p:first-child {
     color: #707070;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 30px;
     font-weight: bolder;
 }

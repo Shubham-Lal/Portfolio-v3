@@ -17,8 +17,9 @@
     display: grid;
     place-items: center;
     border-radius: 100px;
-    background-color: #0057ff;
-    color: #fff;
+    background-color: #fff;
+    color: #0057ff;
+    fill: #0057ff;
     border: 1px solid transparent;
     cursor: pointer;
     transition: 0.2s ease;
@@ -26,6 +27,8 @@
 
 .close__button:hover {
     background-color: #0044cc;
+    color: #fff;
+    fill: #fff;
 }
 
 .view__image .image__gallery {
