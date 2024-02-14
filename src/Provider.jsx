@@ -7,9 +7,13 @@ const Provider = ({ children }) => {
     const windowWidth = useWindowWidth();
 
     const [tab, setTab] = useState(parseInt(localStorage.getItem("tab")) || 0);
-    const [showImage, setShowImage] = useState(false);
-    const [imageSrc, setImageSrc] = useState("");
-    const [videoSrc, setVideoSrc] = useState("");
+    const [showMedia, setShowMedia] = useState(false);
+    const [mediaSrc, setMediaSrc] = useState({
+        id: null,
+        category: "",
+        type: "",
+        src: ""
+    });
 
     useEffect(() => {
         if (windowWidth > 1200) {
@@ -20,16 +24,15 @@ const Provider = ({ children }) => {
     }, [windowWidth, tab]);
 
     useEffect(() => {
-        if (showImage) document.body.style.overflow = "hidden";
+        if (showMedia) document.body.style.overflow = "hidden";
         else document.body.style.overflow = "";
-    }, [showImage]);
+    }, [showMedia]);
 
     return (
         <Context.Provider value={{
             tab, setTab,
-            showImage, setShowImage,
-            imageSrc, setImageSrc,
-            videoSrc, setVideoSrc
+            showMedia, setShowMedia,
+            mediaSrc, setMediaSrc
         }}>
             {children}
         </Context.Provider>

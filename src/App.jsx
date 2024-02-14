@@ -6,13 +6,13 @@ import { useContext } from 'react'
 import { Context } from './Provider'
 
 const App = () => {
-  const { showImage, imageSrc, videoSrc } = useContext(Context);
+  const { showMedia, mediaSrc } = useContext(Context);
 
   return (
     <div className='container'>
       <Left />
       <Right />
-      {(imageSrc || videoSrc) && <FullScreen />}
+      {(showMedia && mediaSrc.id) && <FullScreen />}
     </div>
   );
 }

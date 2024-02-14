@@ -61,7 +61,7 @@ const Info = () => {
 }
 
 const Photography = () => {
-    const { setShowImage, setImageSrc, setVideoSrc } = useContext(Context);
+    const { setShowMedia, setMediaSrc } = useContext(Context);
     const rearrangedImages = useRearrangedImg(photo);
 
     return (
@@ -72,9 +72,23 @@ const Photography = () => {
                         key={item.id}
                         className="right__image__card"
                         onClick={() => {
-                            if (item.image) setImageSrc(`${item.image}&lazy=load`);
-                            else if (item.video) setVideoSrc(item.video);
-                            setShowImage(true);
+                            if (item.image) {
+                                setMediaSrc({
+                                    id: item.id,
+                                    category: "photo",
+                                    type: "image",
+                                    src: item.image
+                                });
+                            }
+                            else if (item.video) {
+                                setMediaSrc({
+                                    id: item.id,
+                                    category: "photo",
+                                    type: "video",
+                                    src: item.video
+                                });
+                            }
+                            setShowMedia(true);
                         }}
                     >
                         {item?.image ? (
@@ -100,7 +114,7 @@ const Photography = () => {
 }
 
 const GraphicDesign = () => {
-    const { setShowImage, setImageSrc } = useContext(Context);
+    const { setShowMedia, setMediaSrc } = useContext(Context);
     const rearrangedImages = useRearrangedImg(graphic);
 
     return (
@@ -111,8 +125,13 @@ const GraphicDesign = () => {
                         key={item.id}
                         className="right__image__card"
                         onClick={() => {
-                            setImageSrc(item.image);
-                            setShowImage(true);
+                            setMediaSrc({
+                                id: item.id,
+                                category: "graphic",
+                                type: "image",
+                                src: item.image
+                            });
+                            setShowMedia(true);
                         }}
                     >
                         {item.image && (
