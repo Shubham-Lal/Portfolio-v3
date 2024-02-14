@@ -9,7 +9,7 @@ const About = () => {
             <p>
                 Passionate about turning ideas into visual masterpieces, I am Pratik Prasad, a dedicated graphic designer with a keen eye for detail and a love for creative expression.
                 {showMore && (
-                    <> My mission is to bring your vision to life through stunning and effective design. I believe that design goes beyond aesthetics; it's about telling a story, conveying a message, and creating a lasting impression. I strive to blend innovation with timeless principles to deliver designs that resonate with your audience.</>
+                    <> My mission is to bring your vision to life through stunning and effective design. I believe that design goes beyond aesthetics; it&apos;s about telling a story, conveying a message, and creating a lasting impression. I strive to blend innovation with timeless principles to deliver designs that resonate with your audience.</>
                 )}
                 <span
                     onClick={() => setShowMore(!showMore)}

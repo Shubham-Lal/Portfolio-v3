@@ -67,14 +67,14 @@ const Photography = () => {
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
-                {rearrangedImages.map((item, i) => item && (
+                {rearrangedImages.map(item => item && (
                     <div
                         key={item.id}
                         className="right__image__card"
                         onClick={() => {
                             if (item.image) {
                                 setMediaSrc({
-                                    id: item.id,
+                                    id: item.id - 1,
                                     category: "photo",
                                     type: "image",
                                     src: item.image
@@ -82,7 +82,7 @@ const Photography = () => {
                             }
                             else if (item.video) {
                                 setMediaSrc({
-                                    id: item.id,
+                                    id: item.id - 1,
                                     category: "photo",
                                     type: "video",
                                     src: item.video
@@ -120,13 +120,13 @@ const GraphicDesign = () => {
     return (
         <div className="right__image__container">
             <div className="right__image__wrapper">
-                {rearrangedImages.map((item, i) => item && (
+                {rearrangedImages.map(item => item && (
                     <div
                         key={item.id}
                         className="right__image__card"
                         onClick={() => {
                             setMediaSrc({
-                                id: item.id,
+                                id: item.id - 1,
                                 category: "graphic",
                                 type: "image",
                                 src: item.image
