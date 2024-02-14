@@ -62,6 +62,6 @@
     position: relative;
     z-index: 5;
     width: 100%;
-    height: calc((85/100) * 100svh);
+    height: calc((85/100) * 100dvh);
     object-fit: contain;
 }

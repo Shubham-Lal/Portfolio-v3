@@ -5,7 +5,6 @@ import { Context } from '../../Provider'
 const FullScreen = () => {
     const { showImage, setShowImage, imageSrc, setImageSrc, videoSrc, setVideoSrc } = useContext(Context);
 
-    if (showImage && (imageSrc || videoSrc)) {
         return (
             <div className="view__image">
                 <div
@@ -33,7 +32,6 @@ const FullScreen = () => {
                 </div>
             </div>
         )
-    }
 }
 
 export default FullScreen
