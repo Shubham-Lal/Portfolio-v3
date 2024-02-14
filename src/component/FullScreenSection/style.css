@@ -31,6 +31,63 @@
     fill: #fff;
 }
 
+.prev-next__container {
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev__btn,
+.next__btn {
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.prev__btn:hover,
+.next__btn:hover {
+    background-color: transparent;
+    color: white;
+    fill: white;
+}
+
+.prev__btn:hover {
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+.next__btn:hover {
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+}
+
+.prev__btn.hidden,
+.next__btn.hidden {
+    visibility: hidden;
+}
+
+.prev__btn {
+    border-radius: 0 20px 20px 0;
+}
+
+.next__btn {
+    border-radius: 20px 0 0 20px;
+}
+
 .view__image .image__gallery {
     height: 100%;
     display: grid;
@@ -64,4 +121,29 @@
     width: 100%;
     height: calc((85/100) * 100dvh);
     object-fit: contain;
+}
+
+@media screen and (min-width: 577px) {
+    .prev-next__container {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .prev-next__container {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .prev__btn,
+    .next__btn {
+        padding: 4px 17.5px;
+        border-radius: 20px;
+    }
+
+    .prev__btn:hover,
+    .next__btn:hover {
+        border-color: white;
+    }
 }
